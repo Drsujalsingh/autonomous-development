@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My First Website</title>
+  <style>
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: #f4f7fb;
+      color: #172033;
+    }
+    nav {
+      padding: 20px;
+      background: #172033;
+      color: white;
+      text-align: center;
+    }
+    main {
+      max-width: 750px;
+      margin: 80px auto;
+      padding: 25px;
+      text-align: center;
+    }
+    h1 { font-size: 42px; }
+    p { line-height: 1.7; color: #586174; }
+    button {
+      padding: 14px 25px;
+      border: 0;
+      border-radius: 8px;
+      background: #2563eb;
+      color: white;
+      font-size: 16px;
+      cursor: pointer;
+    }
+    footer {
+      text-align: center;
+      padding: 25px;
+    }
+    @media(max-width:600px) {
+      h1 { font-size: 32px; }
+      main { margin: 45px auto; }
+    }
+  </style>
+</head>
+<body>
+  <nav>MY FIRST WEBSITE</nav>
+  <main>
+    <h1>Welcome to My Website!</h1>
+    <p>
+      This is my first website, created using
+      HTML, CSS and JavaScript.
+    </p>
+    <button onclick="showMessage()">Click Me</button>
+    <p id="message"></p>
+  </main>
+  <footer>My First Website | 2026</footer>
+  <script>
+    function showMessage() {
+      document.getElementById("message").textContent =
+        "Congratulations! Your website is working.";
+    }
+  </script>
+</body>
+</html>
